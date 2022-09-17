@@ -1,0 +1,130 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <menu class="navbar">
+            <img src="{% static 'images/logo.png' %}">
+             <ul>
+            <li><a href="http://127.0.0.1:8000/">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#Our-services">Services</a></li>
+            <li><a href="#our-plans">Plans</a></li>
+            <li><a href="#Contact-section">Contact</a></li>   
+            <li><a href="http://127.0.0.1:8000/lobby/">Start class</a></li>
+           </ul>
+        </menu>
+        <div id="hero">
+            <h1>vteach</h1>
+            <p>We pay you to<br> teach we pay you to learn</p>
+            <a href="http://127.0.0.1:8000/lobby/"><button>get started</button></a>
+    </div>
+    <div id="goals">
+        <img src="{% static 'images/goals.jpg' %}"/>
+        <div class="text-area">
+            <h1>We provide a solution for the unemployed <br> teachers and students.
+            </h1>
+            <p>At vteach, we contribute to the infrastructure of the society through our platform where we pay both employed or 
+                unemployed, teachers of different skills or teachers of different subjects, certificated or uncertificated teachers 
+                for every service rendered. We also furthermore contribute by paying students for each service
+                they purchase thus creating a balance and reducing the rate for unemployment in our society.</p>
+        </div>
+    </div>
+
+    <header id="about-section">
+        <h2>About us  </h2>
+          <p>Vteach is an online learning platform based in Lagos, Nigeria, founded in the year 2022. Vteach is involved
+              in the connecting of teachers and learners via video chat in order to ease interactions and understanding. Vteach also help the
+              teachers and students earn or create a source of income through teaching and learning at their own comfort, anyday, anytime.
+          </p>
+      </header>
+
+      <section id="our-plans">
+        <h2>Our plans</h2>
+        <hr>
+        <p>Here at Vteach, we have different plans that suits your budget capabilities, These plans are for the learners account.
+            The plan varies per the length of the class.
+        </p>
+            <div class="card-div">
+                <div class="card-container">
+                <div class="cards" id="black"><h3>Plan A <br>30mins</h3></div>
+                <h4>This plan is the only free plan in the plans library, it gives access to a free 30 minutes class without
+                     you paying a dime. It has no limited features. At the end of the 30mins, the video call would be terminated.
+                </h4>
+            </div>
+            <div class="card-container">
+                <div class="cards" id="pink"><h3>Plan B  <br>1hour</h3></div>
+                <h4>This plan is not a free plan. It is the cheapest plan in the library. It gives access to an hour class with the
+                    payment range of N2000 - N4000. It also have no limited feature. At the end of the 1hour, the video call would be terminated.</h4>
+            </div>
+            <div class="card-container">
+                <div class="cards" id="red"><h3>Plan C <br>1hr30mins</h3></div>
+                <h4>This plan is not a free plan. It gives access to an hour and 30 minutes class with the
+                    payment range of N4000 - N6000. It also have no limited feature. At the end of the 1hour 30 minutes, the video call would be terminated.</h4>
+                </div>
+                <div class="card-container">
+                <div class="cards" id="blue"><h3>Plan D  <br>2hours</h3></div>
+                <h4>This plan is not a free plan. It gives access to a 2hours class with the
+                    payment range of N6000 - N8000. It also have no limited feature. At the exhaustion of the 2hours, the video call would be terminated.</h4>
+                </div>
+        </div>
+    </section>
+    <section id="Our-services">
+       <h2> Our services</h2>
+       <hr>
+       <p>At vteach, we pay students 20% of the amount used to purchase a class with more than 30 minutes duration
+        with a teacher.We also pay the students with referral bonuses and we also pay them another bonus price after 
+        they have bought up to a certain number of classes with more than 30 minutes duration. While we pay the teachers 50% 
+        of the money a student purchased his/her class with. the company then takes the remaining 30% for its continous functionality.
+        </p>
+        <div class="our-service-flex-item">
+            <div class="our-servces-cards">
+                <h3>Educational services</h3>
+                <img src="{% static 'images/education.png' %}">
+                <p>Get taught by the best teachers from different fields of study at the comfort of
+                    your home.
+                </p>
+            </div>
+            <div class="our-servces-cards">
+                <h3>video chat learning</h3>
+                <img src="{% static 'images/video-call.png' %}">
+                <p>Teach or get taught via video chat
+                    for more interraction and understanding.
+                </p>
+            </div>
+            <div class="our-servces-cards">
+                <h3>plans for your budget</h3>
+                <img src="{% static 'images/wallet.png' %}">
+                <p>We have differernt plans for you depending on what you can afford at the moment.</p>
+            </div>
+        </div>
+    </section>
+    <section id="Contact-section">
+        <h3>Contact us</h3>
+        <div class="contact">
+            <h4><a href=" Vteachconnect00@gmail.com"> Vteachconnect00@gmail.com</a></h4>
+            <h4><a href=""> (+234) 905-260-3041</a></h4>
+        </div>
+    </section>
+
+    <div class="harmburber">
+        <div class="harms"></div>
+        <div class="harms"></div>
+        <div class="harms"></div>
+    </div>
+
+    <section class="menu">
+        <div class="harm-nav">
+            <ul class="nav-item">
+                <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#our-plans">plans</a></li>
+                <li><a href="#Our-services">Services</a></li>
+                <li><a href="#Contact-section">Contact</a></li>
+                <li><a href="http://127.0.0.1:8000/lobby/">Start class</a></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <script type="text/javascript" src="{% static 'js/js.js' %}" ></script>
+    {% endblock content %}

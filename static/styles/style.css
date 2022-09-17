@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*..... start container ...*/
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)),url("../images/hero-\ pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-position: center;
+    overflow-x: hidden;
+}
+/*..... end of container ...*/
+
+
+/*..... start nav section ...*/
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    color: snow;
+    width: 100%;
+}
+.navbar img{
+    width: 90px;
+    height: auto;
+    padding: 0px 10px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+    padding: 0 40px;
+}
+
+.navbar ul li a{
+    padding: 10px 15px;
+    color: snow;
+    z-index:6;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: springgreen;
+}
+.harms{
+    width: 24px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: snow;
+    transition:  0.5s ease-out;
+}
+
+.harmburber{
+   position: fixed;
+   top: 30px;
+   right: 60px;
+   display: none;
+}
+
+.close{
+    transform: rotate(180deg);
+    transition:  0.5s ease-out;
+    z-index: 4;
+   
+}
+.close .harms:nth-of-type(1){
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.close .harms:nth-of-type(2){
+    opacity: 0;
+}
+.close .harms:nth-of-type(3){
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    display: none;
+}
+
+.harm-nav {
+    background-color: black;
+    transition: 0.5s ease-out;
+    min-height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+    align-items: center;
+    transform: translate3d(0, -100%, 0);
+}
+.nav-item{
+    text-align: center;
+    font-size: 30px;
+    list-style: none;
+    padding-top: 200px;
+}
+ .menu .nav-item li {
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+ li a:hover{
+     color: springgreen;
+ }
+.nav-item a{
+    text-decoration: none;
+    color: snow;
+}
+.show{
+    visibility: visible;
+    overflow: hidden;
+}
+.show{
+    transform: translate3d(0,0,0);
+}
+/*..... end nav section...*/
+
+/*..... start hero ...*/
+#hero{
+    padding: 0px 20px 0 ;
+    color: snow;
+    text-align: center;
+    width: 100%;
+}
+
+#hero button{
+    margin-top: 10px;
+}
+#hero h3{
+  justify-self: end;
+   padding: 5px 20px;
+   color: #9c6830;
+   font-size: 30px;
+   align-self: center;
+   
+
+}
+#hero h1{
+    text-transform: capitalize;
+    font-weight: initial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 0 50px ;
+    font-size: 80px;
+    font-weight: bolder; 
+    line-height: 0.2;
+}
+#hero p{
+    padding: 0px 70px;
+    font-size: 24px;
+   
+}
+button{
+    padding: 8px;
+    border-radius: 20px;
+    border-style: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    background-color: springgreen;
+    color: snow;
+    font-size: 18px;
+}
+
+button:hover{
+    background: rgb(35, 53, 44);
+}
+
+/*..... end hero ...*/
+
+
+/*..... start goals section ...*/
+#goals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: snow;
+    padding: 30px 30px;
+    margin-top: 50px;
+}
+#goals img{
+    height: 350px;
+    width: 60%;
+    border-radius: 2px;
+    padding: 10px;
+   
+}
+#goals p{
+
+    font-size: 24px;
+    padding: 10px 30px;
+}
+#goals button{
+    margin-left: 10px;
+}
+.text-area{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.text-area h2{
+    padding-left: 20px;
+}
+#goals h1{
+    font-size: 35px;
+    padding-left: 25px;
+}
+
+/*..... end goal section...*/
+
+/*..... start about us ...*/
+#about-section{
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url("../images/Library\ 2.jpg");
+    background-repeat: no-repeat;
+    color: snow;
+    text-align: center;
+    width: 100%;
+}
+
+#about-section h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding: 40px 0 0 0;
+    z-index: 10;
+
+}
+#about-section p{
+    font-size: 24px;
+    padding: 10px  50px 50px 50px;
+    z-index: 10;
+}
+
+/*..... end about us ...*/
+
+/*..... start our plans ...*/
+#our-plans{
+    background: white;
+    width: 100%;
+}
+#our-plans h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+#our-plans p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 50px;
+}
+.card-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+.cards{
+    background:black;
+    height: 150px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#pink{
+    background-color: rgb(12, 12, 41);
+}
+#red{
+    background-color: darkgoldenrod;
+}
+#blue{
+    background-color: #871D1D;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.card-container h4{
+    padding: 10px 20px;
+}
+.cards:hover{
+    transform: translateX(10px);
+}
+
+/* ....our plans ends here */
+
+
+/*..... start our services...*/
+#Our-services{
+    border-top: black;
+    text-align: center;
+    background-color: slategrey;
+    width: 100%;
+}
+#Our-services p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px 30px
+}
+#Our-services h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+hr{
+    border:1px solid black;
+    margin-left: 400px;
+    margin-right:400px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.our-service-flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.our-service-flex-item h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: lighter;
+
+}
+
+.our-servces-cards img{
+    height: auto;
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+/*..... end our services ...*/
+
+/* contact starts here....*/
+
+#Contact-section{
+    text-align: center;
+    background-color: rgb(10, 19, 27);
+    color: snow;
+    padding: 20px 0;
+    width: 100%;
+}
+#Contact-section h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.contact a{
+    text-decoration: none;
+    color: snow;
+    padding: 10px 30px;
+    font-weight: lighter;
+}
+
+/*.......contact ends here...*/
+
+@media(max-width:600px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .harmburber{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+    #goals img{
+        height: 350px;
+        width: 350px;
+        border-radius: 2px;
+    }
+    #goals {
+        flex-direction: column;
+    }
+    #goals p{
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact h4{
+        padding-bottom: 10px;
+    }
+    .our-service-flex-item{
+        flex-direction: column;
+    }
+    .card-div{
+        flex-direction: column;
+    }
+
+}
